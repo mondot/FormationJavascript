@@ -51,3 +51,7 @@ Dans l'exemple on charge la carte depuis openstreetmap.org mais on pourrait auss
 
 Avec d3 on peut consommer un fichier csv très facilement. [d3.js](https://d3js.org/)  
 Tracer des courbes: [c3.js](http://c3js.org/) librairie basée sur d3.  
+Ou [Highcharts](https://www.highcharts.com/).  
+J'avais un problème de sécurité sur Chrome qui m'empêchait de faire getJSON sur un fichier local.  
+J'ai dû lancer un serveur HTTP (avec Python) pour passer les sécurités.  
+Par contre la sécurité est moins importante sur Firefox car je n'ai pas besoin de lancer un serveur HTTP local pour lire mon fichier .json.  
