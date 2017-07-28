@@ -70,6 +70,7 @@ Les différents types de données. Moteur d'indexation accepte des fichiers de t
 Le [NoSQL](https://www.upwork.com/hiring/data/sql-vs-nosql-databases-whats-the-difference/), on file toutes nos données et il se débrouille pour indexer la données et nous la refiler quand on demande.  
 Le moteur Javascript des différents navigateurs a été récupéré pour créer un serveur asynchrone.  
 [Node.js](https://nodejs.org/en/) est la partie serveur de JS, basé sur V8, le moteur Javascript de Google (le plus rapide sur le marché).  
+(En fait Node est seulement un interpréteur js).  
 En tapant node dans notre console, on lance un serveur node. On peut ensuite écrite du js.  
 La commande 'top' dans la console permet de voir tout les processus lancés sur la machine.  
 'pwd' (print workind directory), 'cd' (change directory).  
@@ -86,5 +87,11 @@ Ca change pas la version dont on s'en sert : patch
 On change version mineure quand on ajoute une fonctionnalité mais ne crée pas d'incompatibilité : minor  
 On casse l'interface, le programme : major  
 
+***[Node.js](https://nodejs.org/en/)***
 
+On installe [http-server](https://www.npmjs.com/package/http-server) pour lancer un serveur http.  
+On lance le serveur avec la commande http-server.  
 
+Tester son site sur différentes plateformes/écrans : [browserstack](https://www.browserstack.com/)  
+Pour créer un client http avec node : on utilise le [module http de Node](https://nodejs.org/api/http.html#http_http).  
+Pour créer un serveur http, on utiliser la commande [http.createServer](https://nodejs.org/api/http.html#http_http_createserver_requestlistener) puis listen(8080).  
