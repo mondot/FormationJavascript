@@ -4,6 +4,7 @@
 
 Ecrire une fonction JS : function(){}  
 [JSON](JavaScript Object Notation) est un type de base de Javascript.  
+L'interpréteur JS de Mozilla s'appelle [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey).  
 
 On va utiliser JQuery ([download here](http://jquery.com/download/))  
 [Documentation](https://developer.mozilla.org/en-US/docs/Web/API)  
@@ -95,3 +96,35 @@ On lance le serveur avec la commande http-server.
 Tester son site sur différentes plateformes/écrans : [browserstack](https://www.browserstack.com/)  
 Pour créer un client http avec node : on utilise le [module http de Node](https://nodejs.org/api/http.html#http_http).  
 Pour créer un serveur http, on utiliser la commande [http.createServer](https://nodejs.org/api/http.html#http_http_createserver_requestlistener) puis listen(8080).  
+Pour écrire dans un fichier, on utilise [fs.writeFile](https://nodejs.org/docs/latest/api/fs.html#fs_fs_writefile_file_data_options_callback).  
+
+**Hébergement**
+
+Des fournisseurs de serveurs peuvent mettre en production notre code dès qu'on leur file le code source, plus besoin de faire du devOps (par exemple [heroku](https://www.heroku.com/) et [digital ocean](https://www.digitalocean.com/)).  
+Attention au pricing (bande passante ou forfait ? si la bande passante est pas bloquée et que la start-up explose, la facture va être saléee).  
+Hébergement mutualisé : [alwaysdata](https://www.alwaysdata.com/en/pricing/).  
+
+Acheter son nom de domaine : chez la plupart des hébergeurs et par exemple chez [gandi](https://www.gandi.net/).  
+
+Un certificat SSL est gratuit : cf [let's encrypt](https://letsencrypt.org/).  
+alwaysdata utilise let's encrypt et est toujours en https gratuitement.  
+
+**[React](https://facebook.github.io/react/)**
+
+Librairie javascript développée par Facebook (React différent de Angular).  
+[Angular](https://angular.io/) est développée par Google. Beaucoup utilisé pour faire des single page app.  
+L'idée est de mettre en lien des éléments du DOM avec des balises (par exemple si j'écris mon prénom dans l'input il est directement dans mon champs h1).  
+C'est du data-binding. Mais les gens l'utilisent déjà plus.  
+
+React est un virtual DOM.  
+On est pas obligé de rafraichir en permanence toutes les données. On peut conserver une vue de notre DOM initial et faire une différence quand on a des nouvelles données.  
+Perf bien meilleures que Angular.  
+Le framework JS qui a le vent en poupe : [vue.js](https://vuejs.org/).  
+
+Pour voir comment marche les différents framework : [todolistmvc](http://todomvc.com/).  
+Avant de choisir un framework, réfléchir à ce qu'on veut vraiment faire.  
+
+Pour faire de la veille technologique, chercher les tech evangelists des grosses boites de dev (comme Google ou Amazon) et les suivre sur twitter par exemple.  
+Pour des formations, il existe [le wagon].  
+
+On peut aussi faire de l'asynchrone en php. La plupart des languages ont leur librairie pour faire de l'asynchrone.  
